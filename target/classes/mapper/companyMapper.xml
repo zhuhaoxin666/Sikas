@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhx.sikasoftware.mapper.machine.CompanyMapper">
+    <insert id="insertComInfo" parameterType="com.zhx.sikasoftware.bean.Company">
+        insert into company(name,introduce,sina,tencent,website,contact,contact_number,email,
+                            picture,pride,remark,creator)
+        values (#{name},#{introduce},#{sina},#{tencent},#{website},#{contact},#{contactNumber},
+                #{email},#{picture},#{pride},#{remark},#{creator})
+    </insert>
+    <select id="selectInfo" resultType="com.zhx.sikasoftware.dto.CompanyDo">
+        select name,introduce,sina,tencent,website,contact,contact_number,email,picture,
+               pride
+        from company limit 1
+    </select>
+
+    <select id="selectAll" resultType="com.zhx.sikasoftware.bean.Company">
+        select  * from company limit 1
+    </select>
+
+    <update id="updateComInfo" parameterType="com.zhx.sikasoftware.bean.Company">
+        update company
+            <set>
+                <if test="name != null and name != '' ">name=#{name},</if>
+                <if test="introduce != null and introduce != '' ">introduce=#{name},</if>
+                <if test="sina != null and sina != '' ">sina=#{sina},</if>
+                <if test="tencent != null and tencent != '' ">tencent=#{tencent},</if>
+                <if test="website != null and website != '' ">website=#{website},</if>
+                <if test="contact != null and contact != '' ">contact=#{contact},</if>
+                <if test="contactNumber != null and contactNumber != '' ">contact_number=#{contactNumber},</if>
+                <if test="email != null and email != '' ">email=#{email},</if>
+                <if test="picture != null and picture != '' ">picture=#{picture},</if>
+                <if test="pride != null and pride != '' ">pride=#{pride},</if>
+                <if test="remark != null and remark != '' ">remark=#{remark},</if>
+                <if test="updater != null and updater != '' ">updater=#{updater}</if>
+            </set>
+            where id = #{id}
+    </update>
+    <delete id="deleteComInfo">
+        delete from company
+    </delete>
+</mapper>

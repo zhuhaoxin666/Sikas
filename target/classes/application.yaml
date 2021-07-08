@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: SikaSoftware
+  datasource:
+    url: 'jdbc:mysql://localhost:3306/sika?serverTimezone=GMT'
+    username: root
+    password: zhx990102
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  thymeleaf:
+    mode: LEGACYHTML5
+
+
+
+logging:
+  level:
+    root: warn
+    com:
+      zhx: debug
+  pattern:
+    console: '%-5level %C.%M[%line] - %msg%n'
+
+mybatis-plus:
+  configuration:
+    map-underscore-to-camel-case: true
+  mapper-locations: classpath:mapper/*.xml
