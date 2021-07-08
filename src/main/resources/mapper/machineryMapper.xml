@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhx.sikasoftware.mapper.machine.MachineryMapper">
+    <select id="selectAllMachine" resultType="com.zhx.sikasoftware.dto.MachineryDo">
+        select mid,mname,mtype,mmodel,purchaser,purchaserdate,picture
+        from machinery
+        where delflag = 0
+    </select>
+
+    <select id="selectOneMachine" resultType="com.zhx.sikasoftware.bean.Machinery">
+        select * from machinery
+        <if test="mId!=null">
+            WHERE mid = #{mId}
+        </if>
+        <if test="mName!=null">
+            WHERE mname = #{mName}
+        </if>
+        AND delflag = 0
+    </select>
+
+    <insert id="insertMachine" parameterType="com.zhx.sikasoftware.bean.Machinery">
+        insert into machinery( mname, mtype, mmodel, purchaser,
+                              purchaserdate, purchaserprice, contractnumber, provider, picture,
+                              officeid, delflag, remark, creator, modifier)
+        values (#{mName}, #{mType}, #{mModel}, #{purchaser},
+                #{purchaserDate}, #{purchaserPrice}
+                   , #{contractNumber}, #{provider}, #{picture},
+                #{officeId}, #{delFlag},
+                #{remark}, #{creator},
+                 #{modifier}
+                )
+    </insert>
+
+    <update id="updateMachine" parameterType="com.zhx.sikasoftware.bean.Machinery">
+        update machinery
+        <set>
+            <if test="mName != null">mname=#{mName},</if>
+            <if test="mType != null">mtype=#{mType},</if>
+            <if test="mModel != null">mmodel=#{mModel},</if>
+            <if test="purchaser != null">purchaser=#{purchaser},</if>
+            <if test="purchaserDate != null">purchaserdate=#{purchaserDate},</if>
+            <if test="purchaserPrice != null">purchaserprice=#{purchaserPrice},</if>
+            <if test="contractNumber != null">contractnumber=#{contractNumber},</if>
+            <if test="provider != null">provider=#{provider},</if>
+            <if test="picture != null">picture=#{picture},</if>
+            <if test="officeId != null">officeid=#{officeId},</if>
+            <if test="delFlag != null">delflag=#{delFlag},</if>
+            <if test="remark != null">remark=#{remark},</if>
+            <if test="modifier != null">modifier=#{modifier},</if>
+            <if test="modifyTime != null">modify_time=#{modifyTime}</if>
+        </set>
+        where mid = #{mId}
+    </update>
+
+    <update id="deleteMachine" >
+        update machinery
+        set delflag = 1
+        where mid=#{mId}
+    </update>
+    
+</mapper>

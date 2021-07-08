@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhx.sikasoftware.mapper.note.NoteMapper">
+    <insert id="insert" parameterType="com.zhx.sikasoftware.bean.Note">
+        insert into message(author, title, email, content)
+        values (#{author},#{title},#{email},#{content})
+    </insert>
+    <select id="select" resultType="com.zhx.sikasoftware.bean.Note" >
+        select mid,author,title,email,content,add_date  from message
+    </select>
+
+    <select id="selectOne" resultType="com.zhx.sikasoftware.bean.Note">
+        select author,title,email,content from message
+        where mid = #{mId}
+    </select>
+
+    <select id="query" resultType="com.zhx.sikasoftware.bean.Note" parameterType="com.zhx.sikasoftware.dto.NoteDo">
+        select mid,author,title,email,content,add_date from message
+        <where>
+            <if test="author!=null and author!=''">author=#{author}</if>
+            <if test="email!=null and email!=''">email=#{email}</if>
+            <if test="content!=null and content!=''">content like concat(concat('%',#{content}),'%')</if>
+        </where>
+    </select>
+
+    <update id="update" parameterType="com.zhx.sikasoftware.bean.Note">
+        update message
+        <set>
+            <if test="title!=null">title=#{title},</if>
+            <if test="email!=null">email=#{email},</if>
+            <if test="content!=null">content=#{content}</if>
+        </set>
+        where mid = #{mId}
+    </update>
+    <delete id="delete" parameterType="com.zhx.sikasoftware.bean.Note">
+        delete from message
+        where mid = #{mId}
+    </delete>
+
+</mapper>
