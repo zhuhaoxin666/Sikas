@@ -4,8 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="tws commit">
+    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="tws commit test">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/MachineryMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/MachineryMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/img.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/img_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo.pngpride.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/images/logo1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/images/logo1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/pride.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/staticpride.png" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +27,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -68,7 +79,7 @@
       <recent name="C:\Users\Dell\Desktop\Sikas\src\main\resources\templates" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.SikaSoftwareApplication">
+  <component name="RunManager" selected="JUnit.StaffMapperTest.test04">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -82,17 +93,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SikaSoftwareApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MachineryMapperTest.tt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SikaSoftware" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhx.sikasoftware.*" />
+          <option name="PATTERN" value="com.zhx.sikasoftware.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zhx.sikasoftware" />
-      <option name="MAIN_CLASS_NAME" value="com.zhx.sikasoftware.SikaSoftwareApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.zhx.sikasoftware.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.zhx.sikasoftware.mapper.MachineryMapperTest" />
+      <option name="METHOD_NAME" value="tt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StaffMapperTest.test04" />
         <item itemvalue="JUnit.StaffMapperTest.test01" />
         <item itemvalue="JUnit.StaffMapperTest.test03" />
-        <item itemvalue="JUnit.StaffMapperTest.test04" />
         <item itemvalue="JUnit.StaffMapperTest.test02" />
-        <item itemvalue="JUnit.SikaSoftwareApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MachineryMapperTest.tt" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +216,28 @@
       <option name="project" value="LOCAL" />
       <updated>1625800798976</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tws commit test">
+      <created>1625810156927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625810156927</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tws commit test">
+      <created>1625810253100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625810253100</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tws commit test">
+      <created>1625810302561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625810302561</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +257,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tws commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="tws commit" />
+    <MESSAGE value="tws commit test" />
+    <option name="LAST_COMMIT_MESSAGE" value="tws commit test" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
