@@ -4,6 +4,7 @@ import com.zhx.sikasoftware.bean.Machinery;
 import com.zhx.sikasoftware.dao.MachineryDao;
 import com.zhx.sikasoftware.dto.MachineryDo;
 import com.zhx.sikasoftware.mapper.machine.MachineryMapper;
+import com.zhx.sikasoftware.mapper.machine.StaffMapper;
 import com.zhx.sikasoftware.service.MachineryService;
 import com.zhx.sikasoftware.utils.PictureUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -29,6 +30,14 @@ public class MachineryMapperTest {
 
     @Autowired
     MachineryService machineryService;
+
+    @Autowired
+    StaffMapper staffMapper;
+
+    @Test
+    public void tt(){
+        log.debug("测试--》》{}",staffMapper);
+    }
 
     @Test
     void test01() throws IOException {

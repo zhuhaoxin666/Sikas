@@ -4,8 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="tws commit">
+    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="tws commit01 数据库部分">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/StaffController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/StaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/StaffDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/StaffDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/StaffDaoImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/StaffDo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/StaffDo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/StaffMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/StaffService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/StaffServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/staffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/staffMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/StaffMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/StaffMapperTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zhx/sikasoftware/mapper/MachineryMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zhx/sikasoftware/mapper/MachineryMapperTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
-        <option value="Interface" />
         <option value="spring-beans.schema" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -52,6 +62,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,38 +72,28 @@
     <property name="project.structure.last.edited" value="项目" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="http.proxy" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Dell\Desktop\Sikas\src\main\resources\templates" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Dell\Desktop\Sikas\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunManager" selected="Spring Boot.SikaSoftwareApplication">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SikaSoftwareApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MachineryMapperTest.tt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="SikaSoftware" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.zhx.sikasoftware.*" />
+          <option name="PATTERN" value="com.zhx.sikasoftware.mapper.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.zhx.sikasoftware" />
-      <option name="MAIN_CLASS_NAME" value="com.zhx.sikasoftware.SikaSoftwareApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="PACKAGE_NAME" value="com.zhx.sikasoftware.mapper" />
+      <option name="MAIN_CLASS_NAME" value="com.zhx.sikasoftware.mapper.MachineryMapperTest" />
+      <option name="METHOD_NAME" value="tt" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -171,11 +172,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.StaffMapperTest.test04" />
         <item itemvalue="JUnit.StaffMapperTest.test01" />
         <item itemvalue="JUnit.StaffMapperTest.test03" />
-        <item itemvalue="JUnit.StaffMapperTest.test04" />
         <item itemvalue="JUnit.StaffMapperTest.test02" />
-        <item itemvalue="JUnit.SikaSoftwareApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MachineryMapperTest.tt" />
       </list>
     </recent_temporary>
   </component>
@@ -190,6 +191,7 @@
       <workItem from="1625729633270" duration="2613000" />
       <workItem from="1625732551696" duration="1719000" />
       <workItem from="1625790332005" duration="10935000" />
+      <workItem from="1625823532444" duration="9919000" />
     </task>
     <task id="LOCAL-00001" summary="tws commit">
       <created>1625800706908</created>
@@ -205,7 +207,35 @@
       <option name="project" value="LOCAL" />
       <updated>1625800798976</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="tws commit test">
+      <created>1625810156927</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625810156927</updated>
+    </task>
+    <task id="LOCAL-00004" summary="tws commit test">
+      <created>1625810253100</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1625810253100</updated>
+    </task>
+    <task id="LOCAL-00005" summary="tws commit test">
+      <created>1625810302561</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625810302561</updated>
+    </task>
+    <task id="LOCAL-00006" summary="tws commit01 数据库部分">
+      <created>1625816839852</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625816839852</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,7 +255,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="tws commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="tws commit" />
+    <MESSAGE value="tws commit test" />
+    <MESSAGE value="tws commit01 数据库部分" />
+    <option name="LAST_COMMIT_MESSAGE" value="tws commit01 数据库部分" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
