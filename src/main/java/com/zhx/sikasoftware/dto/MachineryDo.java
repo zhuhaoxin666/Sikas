@@ -12,5 +12,5 @@ public class MachineryDo {
     private String mModel;
     private String purchaser;
     private Date purchaserDate;
-    private Byte[] picture;
+    private String picture;
 }

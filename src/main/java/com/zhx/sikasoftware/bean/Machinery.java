@@ -2,6 +2,7 @@ package com.zhx.sikasoftware.bean;
 
 import com.baomidou.mybatisplus.annotation.*;
 import lombok.*;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.sql.Date;
 import java.time.LocalDate;
@@ -20,11 +21,12 @@ public class Machinery {
     private String mType;
     private String mModel;
     private String purchaser;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private LocalDate purchaserDate;
     private Integer purchaserPrice;
     private String contractNumber;
     private String provider;
-    private Byte[] picture;
+    private String picture;
     private Integer officeId;
     private Integer delFlag;
     private String remark;

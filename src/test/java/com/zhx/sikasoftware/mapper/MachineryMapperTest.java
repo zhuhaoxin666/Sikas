@@ -47,7 +47,7 @@ public class MachineryMapperTest {
 //        File picture = new File("C:\\Users\\ZHX\\Desktop\\需求\\资源管理模块\\images\\shouye\\shouye_03.png");
         File picture = new File("C:\\Users\\ZHX\\Desktop\\需求\\资源管理模块\\images\\images\\76c3108f90740ed297a2da91e612964.jpg");
         Byte[] picByte = PictureUtils.getPicByte(picture);
-        machinery.setPicture(picByte);
+
         machinery.setOfficeId(002);
         machinery.setDelFlag(0); // 1 表示已删除
         machinery.setRemark("备注：拖拉机一定要帅");
@@ -97,9 +97,7 @@ public class MachineryMapperTest {
             File file = new File("D:\\SikaSoftware\\src\\main\\resources\\static\\userimages\\"+machineryDos.get(i).getMId()+".png");
             MachineryDo machineryDo =  machineryDos.get(i);
             OutputStream os = new FileOutputStream(file);
-            for (int j = 0; j < machineryDo.getPicture().length; j++) {
-                os.write(machineryDo.getPicture()[j]);
-            }
+
         }
     }
 

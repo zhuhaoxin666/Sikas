@@ -184,33 +184,34 @@
             <span>资源&nbsp;&gt;&nbsp;&nbsp;农机管理&nbsp;&gt;&nbsp;&nbsp;详情</span>
         </div>
     </div>
-        <form class="form-horizontal" role="form" >
+        <form class="form-horizontal" role="form" action="/toadd" enctype="multipart/form-data" method="post">
                 <div class="form-group">
                     <p class="col-xs-1 control-label">农机类型</p>
                     <div class="col-xs-3">
-                        <select class="form-control" id="nj_leixing">
-                            <option value="">请选择</option>
-                            <option value="">轮式拖拉机</option>
-                            <option value="">轮式拖拉机</option>
+                        <select name="mType" class="form-control" id="nj_leixing">
+                            <option disabled value="">请选择</option>
+                            <option value="轮式拖拉机">轮式拖拉机</option>
+                            <option value="履带拖拉机">履带拖拉机</option>
+                            <option value="重型装载机">重型装载机</option>
                         </select>
                     </div>
                     <p class="col-xs-1 control-label" >农机名称</p>
                     <div class="col-xs-3">
-                        <input class="form-control" id="nj_name" type="text" />
+                        <input name="mName" class="form-control" id="nj_name" type="text" />
                     </div>
                     <p class="col-xs-1 control-label" >农机型号</p>
                     <div class="col-xs-3">
-                        <input class="form-control" id="nj_xinghao" type="text" />
+                        <input name="mModel" class="form-control" id="nj_xinghao" type="text" />
                     </div>
                 </div>
                 <div class="form-group has-feedback">
                     <p class="col-xs-1 control-label">购买人</p>
                     <div class="col-xs-3">
-                        <input class="form-control" id="goumai_name" type="text" />
+                        <input name="purchaser" class="form-control" id="goumai_name" type="text" />
                     </div>
                     <p class="col-xs-1 control-label" >购买时间</p>
                     <div class="col-xs-3">
-                            <input class="form-control" id="goumai_time" type="date" value="" />
+                            <input name="purchaserDate" class="form-control" id="goumai_time" type="date" value="" />
                             <i class="glyphicon glyphicon-th form-control-feedback dateicon"></i>
                     </div>
                 </div>
@@ -223,7 +224,7 @@
                     </div>
                 </div>
                 <div class="col-xs-3 col-xs-offset-1">
-                    <input type="file" onchange="previewImage(this,'img_add_nongji','div_add_nongji')" class="shangchuan"/>
+                    <input type="file"  name="pic" onchange="previewImage(this,'img_add_nongji','div_add_nongji')" class="shangchuan"/>
                     <p class="p_img">支持格式：jpg,gif,png,jpeg,bmp,3gp</p>
                     <!--<input type="reset" class="btn reset" value="清&nbsp;除" id="sale-reset"/>-->
                 </div>
