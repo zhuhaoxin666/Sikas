@@ -10,6 +10,7 @@ import java.util.List;
 public interface MachineryService {
     boolean insertMachine(Machinery machinery);
     List<MachineryDo> selectAllMachine();
+    MachineryDo selectOneMachine(Integer mId);
     boolean updateMachine(Machinery machinery);
     boolean deleteMachine(Integer mId);
 }

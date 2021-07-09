@@ -41,4 +41,9 @@ public class MachineryDaoImpl implements MachineryDao {
     public boolean deleteMachine(Integer mId) {
         return machineryMapper.deleteMachine(mId);
     }
+
+    @Override
+    public MachineryDo selectOneMachine(Integer mId) {
+        return machineryMapper.selectOneMachine(mId);
+    }
 }

@@ -10,6 +10,8 @@ import java.util.List;
 public interface MachineryDao {
     boolean insertMachine(Machinery machinery);
     List<MachineryDo> selectAllMachine();
+    MachineryDo selectOneMachine(Integer mId);
     boolean updateMachine(Machinery machinery);
     boolean deleteMachine(Integer mId);
+
 }

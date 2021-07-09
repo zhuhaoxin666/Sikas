@@ -7,14 +7,9 @@
         where delflag = 0
     </select>
 
-    <select id="selectOneMachine" resultType="com.zhx.sikasoftware.bean.Machinery">
-        select * from machinery
-        <if test="mId!=null">
-            WHERE mid = #{mId}
-        </if>
-        <if test="mName!=null">
-            WHERE mname = #{mName}
-        </if>
+    <select id="selectOneMachine" resultType="com.zhx.sikasoftware.dto.MachineryDo">
+        select mid,mname,mtype,mmodel,purchaser,purchaserdate,picture from machinery
+        where mid = #{mId}
         AND delflag = 0
     </select>
 

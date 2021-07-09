@@ -28,6 +28,11 @@ public class MachineryServiceImpl implements MachineryService {
     }
 
     @Override
+    public MachineryDo selectOneMachine(Integer mId) {
+        return machineryDao.selectOneMachine(mId);
+    }
+
+    @Override
     public boolean updateMachine(Machinery machinery) {
         return machineryDao.updateMachine(machinery);
     }

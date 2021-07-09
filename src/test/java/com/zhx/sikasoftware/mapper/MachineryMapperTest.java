@@ -31,6 +31,13 @@ public class MachineryMapperTest {
     MachineryService machineryService;
 
     @Test
+    void test0000(){
+        MachineryDo machineryDo = machineryMapper.selectOneMachine(11);
+        log.debug("{}",machineryDo.toString());
+    }
+
+
+    @Test
     void test01() throws IOException {
         Machinery machinery = new Machinery();
         machinery.setMName("挖掘机");

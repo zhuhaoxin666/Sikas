@@ -12,6 +12,7 @@ import java.util.List;
 public interface MachineryMapper{
     int insertMachine(Machinery machinery);
     List<MachineryDo> selectAllMachine();
+    MachineryDo selectOneMachine(Integer mId);
     int updateMachine(Machinery machinery);
     boolean deleteMachine(Integer mId);
 }

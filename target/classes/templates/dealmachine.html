@@ -203,8 +203,8 @@
 
     <div class="row">
       <div class="col-xs-6 nongjiguanli_box" th:each="machine:${machineryDos}">
-          <a th:href="@{/todeleteMC(mid=${machine.MId})}"><span class="delete-nj glyphicon glyphicon-remove-sign" aria-hidden="true" data-toggle="modal" data-target=".bs-example-modal-sm"></span></a>
-          <a href="modifymachine.html"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
+          <a  th:href="@{/todeleteMC(mid=${machine.MId})}" onClick="return confirm('确定删除?');"><span class=" glyphicon glyphicon-remove-sign" aria-hidden="true" ></span></a>
+          <a th:href="@{/tomodifyMC(mid=${machine.MId})}"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
           <img src="images/9963452010624225441_01.png" style="width: 90px;height: 90px;" th:src="@{'http://127.0.0.1:8080/'+ ${machine.picture}}">
 
              <div class="mingcheng">
@@ -212,8 +212,13 @@
 
                  <p><b>农机类型:[[${machine.MType}]]</b>&nbsp; 购买人: [[${machine.purchaser}]]&nbsp; 购买时间: [[${machine.purchaserDate}]]</p>
              </div>
+
       </div>
+
     </div>
+
+
+
         <!--    分页-->
     <ul class="pagination option-list" >
         <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
