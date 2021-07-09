@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.zhx.sikasoftware.mapper.machine.StaffMapper">
+    <select id="selectAllStaff" resultType="com.zhx.sikasoftware.dto.StaffDo">
+        select sid,sname,sjobtype,sactor,
+               suserpicture,sbirthday,sjobtime,
+               snotes,sdelflag
+        from staff
+        where sdelflag = 0
+    </select>
+    <select id="selectOneStaff" parameterType="int" resultType="com.zhx.sikasoftware.bean.Staff">
+        select sid,sname,sjobtype,sactor,
+               suserpicture,sbirthday,sjobtime,
+               snotes,sdelflag
+        from staff
+        where sdelflag = 0 and sid=${sId}
+    </select>
+    <insert id="insertStaff" parameterType="com.zhx.sikasoftware.bean.Staff">
+        insert into staff(sname,sjobtype,sactor,
+                               suserpicture,sbirthday,sjobtime,
+                               snotes,sdelflag)
+        values ( #{sName}, #{sJobType}, #{sActor},
+                #{sUserPicture},#{sBirthday},
+                #{sJobTime}, #{sNotes},
+                #{sDelFlag}
+               )
+    </insert>
+
+    <update id="updateStaff" parameterType="com.zhx.sikasoftware.bean.Staff">
+        update staff
+        <set>
+            <if test="sName != null">sname=#{sName},</if>
+            <if test="sJobType != null">sjobtype=#{sJobType},</if>
+            <if test="sActor != null">sactor=#{sActor},</if>
+            <if test="sUserPicture != null">suserpicture=#{sUserPicture},</if>
+            <if test="sBirthday != null">sbirthday=#{sBirthday},</if>
+            <if test="sJobTime != null">sjobtime=#{sJobTime},</if>
+            <if test="sNotes != null">snotes=#{sNotes},</if>
+            <if test="sDelFlag != null">sdelflag=#{sDelFlag},</if>
+        </set>
+        where sid = #{sId}
+    </update>
+
+    <update id="deleteStaff" parameterType="int">
+        update staff
+        set sdelflag = 1
+        where sid=#{sId}
+    </update>
+
+</mapper>
