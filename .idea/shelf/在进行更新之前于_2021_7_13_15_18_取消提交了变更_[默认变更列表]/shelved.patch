@@ -1,0 +1,156 @@
+Index: src/main/resources/templates/myquery.html
+===================================================================
+diff --git a/src/main/resources/templates/myquery.html b/src/main/resources/templates/myquery.html
+deleted file mode 100644
+--- a/src/main/resources/templates/myquery.html	(revision 41c0fa6501d11d2714b07c10b829c3bd067fc844)
++++ /dev/null	(revision 41c0fa6501d11d2714b07c10b829c3bd067fc844)
+@@ -1,52 +0,0 @@
+-<!DOCTYPE html>
+-<html xmlns:th="http://www.thymeleaf.org">
+-<head>
+-    <title>天一时代留言本</title>
+-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+-    <link href="images/web.css"   rel="stylesheet" type="text/css">
+-    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+-
+-</head>
+-<body>
+-<div id="wrapper">
+-    <div id="header">
+-        <div id="logo"></div>
+-        <div id="blog-header">
+-            <h1 class="blog-title"><a href="index.html">天一时代留言本 1.0</a></h1>
+-            <div class="blog-desc">欢迎光临天一时代</div>
+-        </div>
+-        <div id="menu">
+-            <ul>
+-                <li><a href="index.html">留言首页</a></li>
+-                <li><a href="/toNew">签写留言</a></li>
+-                <li><a href="login.html">登陆后台</a></li>
+-            </ul>
+-        </div>
+-    </div>
+-
+-    <div id="mainWrapper">
+-        <div id="content" class="content-wide">
+-            <form action="/toquery" method="post" >
+-                姓名：<input type="text" th:value="${noto.author}" name="author"/>邮件：<input type="text" th:value="${noto.email}" name="email"/>内容：<input type="text" th:value="${noto.content}" name="content"/>
+-                <input type="submit" value="查找"/>
+-            </form>
+-            <br><br>
+-            <div class="textbox" th:each="info:${queryall}">
+-                <div class="textbox-title">
+-
+-                    <div class="textbox-label"> [标题 <span th:text="${info.title}"></span>>][留言者:<span th:text="${info.author}"></span> ][留言日期:<span th:text="${info.addDate}"></span></div>
+-                </div>
+-                <div class="textbox-content" th:text="${info.content}">选择适合的语言和软件版本下载,如果您需要下载其它语言版本,请点击此处。 ESET NOD32防病毒软件3.0版下载地址ESET NOD32防病毒软件——简体中文 版本 文件大小 下载Windows XP/Vista(32位)版本 3.0.684 17 MB 下载Windows XP/Vista</div>
+-
+-                <div class="textbox-bottom" >邮箱: [[${info.email}]] | <a th:href="@{/todelete(id=${info.MId})}" >删除</a>| <a th:href="@{/toupdate(id=${info.MId})}" >修改</a></div>
+-            </div>
+-
+-        </div>
+-    </div>
+-    <div id="footer">
+-        <div id="innerFooter">Powered by Tianyitime; Copyright &copy;</div>
+-    </div>
+-
+-</div>
+-</body>
+-</html>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"3834de79-8cb1-497e-bd2a-d9c6c9316a3c\" name=\"默认变更列表\" comment=\"滕文生 删除多余代码\">\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Account.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Note.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/MachineController.java\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/MachineController.java\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/NoteController.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/NoteDao.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/NoteDaoImpl.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/AccountDo.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/NoteDo.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/Picture.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableBill.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableBillItem.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableDept.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableIncome.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableVendor.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/User.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/AccountMapper.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/note/NoteMapper.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/CourseMapper.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/StudentMapper.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/TeacherMapper.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Course.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Student.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Teacher.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/NoteService.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/NoteServiceImpl.java\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/mapper/accountMapper.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/mapper/noteMapper.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/onetomany/courseMapper.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/onetomany/studentMapper.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/onetomany/teacherMapper.xml\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/templates/index.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/templates/login.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/templates/main.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/templates/new.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/main/resources/templates/update.html\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/NoteMapperTest.java\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"FileTemplateManagerImpl\">\r\n    <option name=\"RECENT_TEMPLATES\">\r\n      <list>\r\n        <option value=\"HTML File\" />\r\n        <option value=\"spring-beans.schema\" />\r\n        <option value=\"Interface\" />\r\n        <option value=\"Class\" />\r\n      </list>\r\n    </option>\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"GitSEFilterConfiguration\">\r\n    <file-type-list>\r\n      <filtered-out-file-type name=\"LOCAL_BRANCH\" />\r\n      <filtered-out-file-type name=\"REMOTE_BRANCH\" />\r\n      <filtered-out-file-type name=\"TAG\" />\r\n      <filtered-out-file-type name=\"COMMIT_BY_MESSAGE\" />\r\n    </file-type-list>\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"1v1VXVCAQmPwOzGrqmRSe0Puzww\" />\r\n  <component name=\"ProjectLevelVcsManager\" settingsEditedManually=\"true\">\r\n    <ConfirmationsSetting value=\"1\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"DatabaseDriversLRU\" value=\"mysql\" />\r\n    <property name=\"DefaultHtmlFileTemplate\" value=\"HTML File\" />\r\n    <property name=\"RequestMappingsPanelOrder0\" value=\"0\" />\r\n    <property name=\"RequestMappingsPanelOrder1\" value=\"1\" />\r\n    <property name=\"RequestMappingsPanelWidth0\" value=\"75\" />\r\n    <property name=\"RequestMappingsPanelWidth1\" value=\"75\" />\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/src/main/resources/templates\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.detected.package.tslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.path.for.package.tslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"node.js.selected.package.tslint\" value=\"(autodetect)\" />\r\n    <property name=\"project.structure.last.edited\" value=\"项目\" />\r\n    <property name=\"project.structure.proportion\" value=\"0.15\" />\r\n    <property name=\"project.structure.side.proportion\" value=\"0.0\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"editing.templates\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Dell\\Desktop\\Sikas\\src\\main\\resources\\templates\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\Users\\Dell\\Desktop\\Sikas\\src\\main\\resources\\templates\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\" selected=\"Spring Boot.SikaSoftwareApplication\">\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StaffMapperTest.test01\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SikaSoftware\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.zhx.sikasoftware.mapper.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.zhx.sikasoftware.mapper\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.zhx.sikasoftware.mapper.StaffMapperTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test01\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StaffMapperTest.test02\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SikaSoftware\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.zhx.sikasoftware.mapper.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.zhx.sikasoftware.mapper\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.zhx.sikasoftware.mapper.StaffMapperTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test02\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StaffMapperTest.test03\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SikaSoftware\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.zhx.sikasoftware.mapper.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.zhx.sikasoftware.mapper\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.zhx.sikasoftware.mapper.StaffMapperTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test03\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StaffMapperTest.test04\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SikaSoftware\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.zhx.sikasoftware.mapper.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.zhx.sikasoftware.mapper\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.zhx.sikasoftware.mapper.StaffMapperTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test04\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"StaffMapperTest.test05\" type=\"JUnit\" factoryName=\"JUnit\" temporary=\"true\" nameIsGenerated=\"true\">\r\n      <module name=\"SikaSoftware\" />\r\n      <extension name=\"coverage\">\r\n        <pattern>\r\n          <option name=\"PATTERN\" value=\"com.zhx.sikasoftware.mapper.*\" />\r\n          <option name=\"ENABLED\" value=\"true\" />\r\n        </pattern>\r\n      </extension>\r\n      <option name=\"PACKAGE_NAME\" value=\"com.zhx.sikasoftware.mapper\" />\r\n      <option name=\"MAIN_CLASS_NAME\" value=\"com.zhx.sikasoftware.mapper.StaffMapperTest\" />\r\n      <option name=\"METHOD_NAME\" value=\"test05\" />\r\n      <option name=\"TEST_OBJECT\" value=\"method\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <configuration name=\"SikaSoftwareApplication\" type=\"SpringBootApplicationConfigurationType\" factoryName=\"Spring Boot\">\r\n      <module name=\"SikaSoftware\" />\r\n      <option name=\"SPRING_BOOT_MAIN_CLASS\" value=\"com.zhx.sikasoftware.SikaSoftwareApplication\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n    <recent_temporary>\r\n      <list>\r\n        <item itemvalue=\"JUnit.StaffMapperTest.test05\" />\r\n        <item itemvalue=\"JUnit.StaffMapperTest.test04\" />\r\n        <item itemvalue=\"JUnit.StaffMapperTest.test01\" />\r\n        <item itemvalue=\"JUnit.StaffMapperTest.test03\" />\r\n        <item itemvalue=\"JUnit.StaffMapperTest.test02\" />\r\n      </list>\r\n    </recent_temporary>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"默认任务\">\r\n      <changelist id=\"3834de79-8cb1-497e-bd2a-d9c6c9316a3c\" name=\"默认变更列表\" comment=\"\" />\r\n      <created>1625729624179</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1625729624179</updated>\r\n      <workItem from=\"1625729633270\" duration=\"2613000\" />\r\n      <workItem from=\"1625732551696\" duration=\"1719000\" />\r\n      <workItem from=\"1625790332005\" duration=\"10935000\" />\r\n      <workItem from=\"1625823532444\" duration=\"13190000\" />\r\n      <workItem from=\"1626137298828\" duration=\"11205000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"tws commit\">\r\n      <created>1625800706908</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625800706908</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"tws commit\">\r\n      <created>1625800798976</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625800798976</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"tws commit test\">\r\n      <created>1625810156927</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625810156927</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"tws commit test\">\r\n      <created>1625810253100</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625810253100</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"tws commit test\">\r\n      <created>1625810302561</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625810302561</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00006\" summary=\"tws commit01 数据库部分\">\r\n      <created>1625816839852</created>\r\n      <option name=\"number\" value=\"00006\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00006\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625816839852</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00007\" summary=\"tws commit01 数据库部分\">\r\n      <created>1625834031499</created>\r\n      <option name=\"number\" value=\"00007\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00007\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625834031499</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00008\" summary=\"tws commit01 数据库部分+前端\">\r\n      <created>1625834143030</created>\r\n      <option name=\"number\" value=\"00008\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00008\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625834143030</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00009\" summary=\"tws commit01 数据库部分+前端\">\r\n      <created>1625834733628</created>\r\n      <option name=\"number\" value=\"00009\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00009\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1625834733628</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00010\" summary=\"滕文生 final\">\r\n      <created>1626146473214</created>\r\n      <option name=\"number\" value=\"00010\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00010\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1626146473214</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"11\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"tws commit\" />\r\n    <MESSAGE value=\"tws commit test\" />\r\n    <MESSAGE value=\"tws commit01 数据库部分\" />\r\n    <MESSAGE value=\"tws commit01 数据库部分+前端\" />\r\n    <MESSAGE value=\"滕文生 final\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"滕文生 final\" />\r\n  </component>\r\n  <component name=\"XSLT-Support.FileAssociations.UIState\">\r\n    <expand />\r\n    <select />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 41c0fa6501d11d2714b07c10b829c3bd067fc844)
++++ b/.idea/workspace.xml	(date 1626160662600)
+@@ -5,42 +5,7 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="滕文生 删除多余代码">
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Account.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Note.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/MachineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/MachineController.java" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/NoteController.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/NoteDao.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/NoteDaoImpl.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/AccountDo.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/NoteDo.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/Picture.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableBill.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableBillItem.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableDept.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableIncome.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableVendor.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/User.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/AccountMapper.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/note/NoteMapper.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/CourseMapper.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/StudentMapper.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/TeacherMapper.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Course.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Student.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Teacher.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/NoteService.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/NoteServiceImpl.java" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/accountMapper.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/noteMapper.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/onetomany/courseMapper.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/onetomany/studentMapper.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/onetomany/teacherMapper.xml" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/NoteMapperTest.java" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myquery.html" beforeDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -87,7 +52,7 @@
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+     <property name="WebServerToolWindowFactoryState" value="false" />
+     <property name="aspect.path.notification.shown" value="true" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+     <property name="node.js.detected.package.eslint" value="true" />
+     <property name="node.js.detected.package.tslint" value="true" />
+     <property name="node.js.path.for.package.eslint" value="project" />
+@@ -300,7 +265,21 @@
+       <option name="project" value="LOCAL" />
+       <updated>1626146473214</updated>
+     </task>
+-    <option name="localTasksCounter" value="11" />
++    <task id="LOCAL-00011" summary="滕文生 删除多余代码">
++      <created>1626160483558</created>
++      <option name="number" value="00011" />
++      <option name="presentableId" value="LOCAL-00011" />
++      <option name="project" value="LOCAL" />
++      <updated>1626160483558</updated>
++    </task>
++    <task id="LOCAL-00012" summary="滕文生 删除多余代码">
++      <created>1626160528970</created>
++      <option name="number" value="00012" />
++      <option name="presentableId" value="LOCAL-00012" />
++      <option name="project" value="LOCAL" />
++      <updated>1626160528970</updated>
++    </task>
++    <option name="localTasksCounter" value="13" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -324,7 +303,8 @@
+     <MESSAGE value="tws commit01 数据库部分" />
+     <MESSAGE value="tws commit01 数据库部分+前端" />
+     <MESSAGE value="滕文生 final" />
+-    <option name="LAST_COMMIT_MESSAGE" value="滕文生 final" />
++    <MESSAGE value="滕文生 删除多余代码" />
++    <option name="LAST_COMMIT_MESSAGE" value="滕文生 删除多余代码" />
+   </component>
+   <component name="XSLT-Support.FileAssociations.UIState">
+     <expand />
