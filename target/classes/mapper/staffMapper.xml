@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.zhx.sikasoftware.mapper.machine.StaffMapper">
+
     <select id="selectAllStaff" resultType="com.zhx.sikasoftware.dto.StaffDo">
         select sid,sname,sjobtype,sactor,
                suserpicture,sbirthday,sjobtime,
@@ -8,6 +9,15 @@
         from staff
         where sdelflag = 0
     </select>
+
+    <select id="dividepagestaff" resultType="com.zhx.sikasoftware.dto.StaffDo">
+        select sid,sname,sjobtype,sactor,
+               suserpicture,sbirthday,sjobtime,
+               snotes,sdelflag
+        from staff
+        where sdelflag = 0 limit ${page},${pageSize}
+    </select>
+
     <select id="selectOneStaff" parameterType="int" resultType="com.zhx.sikasoftware.bean.Staff">
         select sid,sname,sjobtype,sactor,
                suserpicture,sbirthday,sjobtime,
@@ -15,6 +25,7 @@
         from staff
         where sdelflag = 0 and sid=${sId}
     </select>
+
     <insert id="insertStaff" parameterType="com.zhx.sikasoftware.bean.Staff">
         insert into staff(sname,sjobtype,sactor,
                                suserpicture,sbirthday,sjobtime,
@@ -46,5 +57,9 @@
         set sdelflag = 1
         where sid=#{sId}
     </update>
+
+    <select id="countAll" resultType="int">
+        select count(*) from staff where sdelflag=0;
+    </select>
 
 </mapper>

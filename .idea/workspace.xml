@@ -4,27 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="tws commit01 数据库部分+前端">
+    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="滕文生 final">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/StaffController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/StaffController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/StaffDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/StaffDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/StaffDaoImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/StaffDaoImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/StaffMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/StaffMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/StaffService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/StaffService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/StaffServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/StaffServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/staffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/mapper/staffMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/addstaff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/addstaff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/dealstaff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/dealstaff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/update.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/updatestaff.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/updatestaff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/StaffMapperTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/StaffMapperTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/controller/StaffController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/controller/StaffController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/dao/impl/StaffDaoImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/dao/impl/StaffDaoImpl.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/mapper/machine/StaffMapper.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/mapper/machine/StaffMapper.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/service/impl/StaffServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/service/impl/StaffServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/dao/StaffDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/dao/StaffDao.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/service/StaffService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zhx/sikasoftware/service/StaffService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/mapper/staffMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/mapper/staffMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/userimages/1.png" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/userimages/1.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/templates/addstaff.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/addstaff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/dealstaff.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/dealstaff.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/templates/updatestaff.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/updatestaff.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/update.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/update.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zhx/sikasoftware/mapper/StaffMapperTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zhx/sikasoftware/mapper/StaffMapperTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -212,7 +201,7 @@
       <workItem from="1625732551696" duration="1719000" />
       <workItem from="1625790332005" duration="10935000" />
       <workItem from="1625823532444" duration="13190000" />
-      <workItem from="1626137298828" duration="8155000" />
+      <workItem from="1626137298828" duration="11205000" />
     </task>
     <task id="LOCAL-00001" summary="tws commit">
       <created>1625800706908</created>
@@ -277,7 +266,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625834733628</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="滕文生 final">
+      <created>1626146473214</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1626146473214</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -300,7 +296,8 @@
     <MESSAGE value="tws commit test" />
     <MESSAGE value="tws commit01 数据库部分" />
     <MESSAGE value="tws commit01 数据库部分+前端" />
-    <option name="LAST_COMMIT_MESSAGE" value="tws commit01 数据库部分+前端" />
+    <MESSAGE value="滕文生 final" />
+    <option name="LAST_COMMIT_MESSAGE" value="滕文生 final" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
