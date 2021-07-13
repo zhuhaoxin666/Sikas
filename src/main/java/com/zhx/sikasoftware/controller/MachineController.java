@@ -1,7 +1,6 @@
 package com.zhx.sikasoftware.controller;
 
 import com.zhx.sikasoftware.bean.Machinery;
-import com.zhx.sikasoftware.bean.Note;
 import com.zhx.sikasoftware.dto.MachineryDo;
 import com.zhx.sikasoftware.service.MachineryService;
 import lombok.extern.slf4j.Slf4j;
@@ -13,7 +12,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
 
-import javax.xml.ws.soap.Addressing;
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
