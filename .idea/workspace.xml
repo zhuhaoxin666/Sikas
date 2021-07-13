@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="滕文生 删除多余代码">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myquery.html" beforeDir="false" />
+    <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="滕文生 完成咯！">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/CompanyMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/MachineryMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/StaffMapperTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -279,7 +282,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626160528970</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="滕文生 完成咯！">
+      <created>1626160795500</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1626160795500</updated>
+    </task>
+    <task id="LOCAL-00014" summary="滕文生 完成咯！">
+      <created>1626160803532</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1626160803532</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -304,7 +321,8 @@
     <MESSAGE value="tws commit01 数据库部分+前端" />
     <MESSAGE value="滕文生 final" />
     <MESSAGE value="滕文生 删除多余代码" />
-    <option name="LAST_COMMIT_MESSAGE" value="滕文生 删除多余代码" />
+    <MESSAGE value="滕文生 完成咯！" />
+    <option name="LAST_COMMIT_MESSAGE" value="滕文生 完成咯！" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
