@@ -5,42 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3834de79-8cb1-497e-bd2a-d9c6c9316a3c" name="默认变更列表" comment="滕文生 删除多余代码">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Account.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/bean/Note.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/MachineController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/MachineController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/controller/NoteController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/NoteDao.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dao/impl/NoteDaoImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/AccountDo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/dto/NoteDo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/Picture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableBill.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableBillItem.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableDept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableIncome.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/TableVendor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/entity/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/machine/AccountMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/note/NoteMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/CourseMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/StudentMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/mapper/onetomany/TeacherMapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Course.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Student.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/onetomany/entity/Teacher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/NoteService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/zhx/sikasoftware/service/impl/NoteServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/accountMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/mapper/noteMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/onetomany/courseMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/onetomany/studentMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/onetomany/teacherMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/main.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/update.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/zhx/sikasoftware/mapper/NoteMapperTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/myquery.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -300,7 +265,21 @@
       <option name="project" value="LOCAL" />
       <updated>1626146473214</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="滕文生 删除多余代码">
+      <created>1626160483558</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1626160483558</updated>
+    </task>
+    <task id="LOCAL-00012" summary="滕文生 删除多余代码">
+      <created>1626160528970</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1626160528970</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -324,7 +303,8 @@
     <MESSAGE value="tws commit01 数据库部分" />
     <MESSAGE value="tws commit01 数据库部分+前端" />
     <MESSAGE value="滕文生 final" />
-    <option name="LAST_COMMIT_MESSAGE" value="滕文生 final" />
+    <MESSAGE value="滕文生 删除多余代码" />
+    <option name="LAST_COMMIT_MESSAGE" value="滕文生 删除多余代码" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
