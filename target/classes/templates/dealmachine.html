@@ -184,13 +184,13 @@
     </div>
 <!-----------农机名称---------->
     <div class="nongji-btn">
-        <form class="bs-example bs-example-form" role="form">
+        <form class="bs-example bs-example-form" role="form" action="/tosearch">
             <div class="row">
                 <div class="col-xs-4">
                     <div class="input-group">
-                        <input type="text" class="form-control" placeholder="请输入搜索条件"/>
+                        <input type="text" name="search" class="form-control" placeholder="请输入搜索条件"/>
                          <span class="input-group-btn">
-                           <button class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                           <button th:type="submit" class="btn btn-primary" type="button"><i class="glyphicon glyphicon-search"></i></button>
                          </span>
                     </div>
                 </div>
@@ -217,22 +217,14 @@
 
     </div>
 
-
-
         <!--    分页-->
     <ul class="pagination option-list" >
-        <li><a href="#">1 <span class="sr-only">(current)</span></a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li>
-            <a href="#" aria-label="Next">
-                <span aria-hidden="true">&raquo;</span>
-            </a>
-        </li>
-        <li><a href="#">尾页</a></li>
-        <li><a href="#">共4页</a></li>
+        <li th:each="index:${sumFooter}"><a th:href="@{/todealmachine(page=${index})}" > [[${index}]] <span class="sr-only">(current)</span></a></li>
+
+        <li><a th:href="@{/todealmachine(page=${sumPage})}">尾页</a></li>
+        <li><a href="#">共[[${sumPage}]]页</a></li>
     </ul>
+
 </div>
     <!--右侧内容end-->
   </div>

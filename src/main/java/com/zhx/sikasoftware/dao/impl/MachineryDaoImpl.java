@@ -43,6 +43,26 @@ public class MachineryDaoImpl implements MachineryDao {
     }
 
     @Override
+    public List<MachineryDo> pageSelect(Integer page, Integer pageSize) {
+        return machineryMapper.pageSelect(page,pageSize);
+    }
+
+    @Override
+    public int countAll() {
+        return machineryMapper.countAll();
+    }
+
+    @Override
+    public int countSearch(String searchStr) {
+        return machineryMapper.countSearch(searchStr);
+    }
+
+    @Override
+    public List<MachineryDo> pageSearch(Integer page, Integer pageSize, String searchStr) {
+        return machineryMapper.pageSearch(page,pageSize,searchStr);
+    }
+
+    @Override
     public MachineryDo selectOneMachine(Integer mId) {
         return machineryMapper.selectOneMachine(mId);
     }
