@@ -47,4 +47,15 @@ public class StaffDaoImpl implements StaffDao{
     public Staff selectOneStaff(int sId) {
         return staffMapper.selectOneStaff(sId);
     }
+
+    @Override
+    public List<StaffDo> dividepagestaff(Integer page, Integer pageSize) {
+        return staffMapper.dividepagestaff(page,pageSize);
+    }
+
+    @Override
+    public int countAll() {
+        return staffMapper.countAll();
+    }
+
 }

@@ -59,4 +59,12 @@ public class StaffMapperTest {
     public void test04(){
         staffMapper.deleteStaff(9);
     }
+
+    @Test
+    public void test05(){
+        List<StaffDo> staffDos;
+
+        staffDos = staffMapper.dividepagestaff(1,2);
+        System.out.println(staffDos);
+    }
 }

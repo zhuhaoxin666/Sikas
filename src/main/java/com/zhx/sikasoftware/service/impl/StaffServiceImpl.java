@@ -42,5 +42,15 @@ public class StaffServiceImpl implements StaffService {
         return staffDao.selectOneStaff(sId);
     }
 
+    @Override
+    public List<StaffDo> dividepagestaff(Integer page, Integer pageSize) {
+        return staffDao.dividepagestaff((page-1)*pageSize,pageSize);
+    }
+
+    @Override
+    public int countAll() {
+        return staffDao.countAll();
+    }
+
 
 }

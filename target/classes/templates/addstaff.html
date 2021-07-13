@@ -183,7 +183,7 @@
             <span>资源&nbsp;&gt;&nbsp;&nbsp;员工管理&nbsp;&gt;&nbsp;&nbsp;添加</span>
         </div>
     </div>
-    <form class="form-horizontal" action="/addstaff" role="form" >
+    <form class="form-horizontal" action="/addstaff" enctype="multipart/form-data" method="post" role="form" >
         <div class="form-group">
             <p class="col-xs-2 control-label">用户名:</p>
             <div class="col-xs-3">
@@ -233,7 +233,7 @@
                 </div>
             </div>
             <div class="col-xs-3 col-xs-offset-1">
-                <input type="file" onchange="previewImage(this,'img_jidi','div_jidi')" class="shangchuan"/>
+                <input type="file" name="sp" onchange="previewImage(this,'img_jidi','div_jidi')" class="shangchuan"/>
                 <p class="p_img">支持格式：jpg,gif,png,jpeg,bmp,3gp</p>
                 <!--<input type="reset" class="btn reset" value="清&nbsp;除" id="sale-reset"/>-->
             </div>
